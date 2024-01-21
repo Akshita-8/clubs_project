@@ -22,7 +22,8 @@ const Clublist = ({ clubs }) => {
             </Link>
           ))}
           
-          <Link to="/chess" className="club-card-link">
+          {/* Add a link to the "Chess Club" */}
+          <Link to="/clubs/chess" className="club-card-link">
             <div className="club-card">
               <strong>Chess Club</strong>
               {/* Include an image if you have one */}

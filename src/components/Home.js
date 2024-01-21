@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Clublist from './Clublist';
+import ClubList from './Clublist'; // Corrected the import statement
 
 const Home = () => {
   const [clubs, setClubs] = useState([]);
@@ -9,14 +9,14 @@ const Home = () => {
     const mockData = [
       {
         id: 1,
-        urlid:'chess',
+        urlid: 'chess',
         name: 'Chess Club',
         description: 'For chess enthusiasts',
         imageUrl: 'https://cdn.pixabay.com/photo/2016/07/12/11/39/checkmate-1511866_640.jpg',
       },
       {
         id: 2,
-        urlid:'coding',
+        urlid: 'coding',
         name: 'Coding Club',
         description: 'Learn and practice coding',
         imageUrl: 'https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705708800&semt=sph',
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div>
       <h1>Student Clubs</h1>
-      <Clublist clubs={clubs} />
+      <ClubList clubs={clubs} /> {/* Corrected the component name */}
     </div>
   );
 };
